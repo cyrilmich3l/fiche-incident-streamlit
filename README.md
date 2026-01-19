@@ -55,16 +55,32 @@ Elle facilite la traçabilité, la communication et le suivi des événements li
 
 ## 🗂️ Structure du projet
 
-📁 projet/
-│── stream_incident.py
-│── personnes.xlsx
-│── lieux.xlsx
-│── incidents.xlsx  (généré automatiquement)
-│── 📁 photos_incidents/ (créé automatiquement)
-│── README.md
-│── 📁 image (screenshot de l'appli)
+```
+📁 fiche-incident-streamlit/
+│
+├── 📁 app/                     # Code source
+│   ├── stream_incident.py
+│   ├── qr_code.py
+│   └── __init__.py
+│
+├── 📁 data/                    # Données d’entrée (versionnées)
+│   ├── personnes.xlsx
+│   └── lieux.xlsx
+│
+├── 📁 data_generated/          # Données générées (NON versionnées)
+│   ├── incidents.xlsx
+│   └── photos_incidents/
+│
+├── 📁 images/                  # Captures d’écran pour le README
+│   ├── app_1.png
+│   ├── app_2.png
+│   ├── excel.png
+│   └── mail.png
+│
+├── README.md
+├── requirements.txt
 
-
+```
 
 ---
 ## 🔧 Installation

@@ -11,8 +11,8 @@ from datetime import time
 def envoyer_mail(date_incident, type_evt, gravite, lieu, personnes_impliquees_str, contenu, destinataire):
     smtp_server = "in-v3.mailjet.com"
     smtp_port = 587
-    username = "1909fdf0c85d8693175fadce4660079f"   # API KEY
-    password = "df3ebdc740ecc12279e938aba35c382c"   # SECRET KEY
+    username = "VOTRE_API_KEY"   # API KEY
+    password = "VOTRE_SECRET_KEY"   # SECRET KEY
 
     # Objet dynamique
     objet_mail = (
@@ -25,7 +25,7 @@ def envoyer_mail(date_incident, type_evt, gravite, lieu, personnes_impliquees_st
 
     msg = MIMEText(contenu)
     msg["Subject"] = objet_mail
-    msg["From"] = "cyril.mich3l@gmail.com"
+    msg["From"] = "VOTRE_ADRESSE_MAIL"
     msg["To"] = destinataire
 
     with smtplib.SMTP(smtp_server, smtp_port) as server:
@@ -233,7 +233,7 @@ if st.button("Envoyer la fiche incident", key="btn_envoyer"):
         envoyer_mail(
             date_incident, type_evt, gravite, lieu,
             personnes_impliquees_str, contenu_mail,
-            "cyril.mich3l@gmail.com"
+            "ADRESSE_MAIL_DESTINATAIRE"
         )
         st.success("Fiche envoyée avec succès")
     except Exception as e:

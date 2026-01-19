@@ -46,11 +46,11 @@ Elle facilite la traçabilité, la communication et le suivi des événements li
 <img src="images/mail.png" width="600">
 
 ### 🖥️ Interface Streamlit
-<img src="images/app_1.png" width="600">
-<img src="images/app_2.png" width="600">
+<img src="image/app_1.png" width="600">
+<img src="image/app_2.png" width="600">
 
 ### 📊 Ligne Excel générée
-<img src="images/excel.png" width="600">
+<img src="image/excel.png" width="600">
 
 
 ## 🗂️ Structure du projet
@@ -69,10 +69,8 @@ Elle facilite la traçabilité, la communication et le suivi des événements li
 ---
 ## 🔧 Installation
 
-# Cloner le dépôt
-
 ```bash
-git clone https://github.com/ton-utilisateur/ton-projet.git
+git clone https://github.com/ton-utilisateur/ton-projet.git ### Cloner le dépôt
 cd ton-projet
 
 pip install -r requirements.txt ### 2️⃣ Installer les dépendances
@@ -83,8 +81,8 @@ streamlit run stream_incident.py ### 3️⃣ Lancer l’application
 # 🔐 Configuration Mailjet
 Dans stream_incident.py, configurez vos identifiants :
 
-python
+```python
 username = "VOTRE_API_KEY"
 password = "VOTRE_SECRET_KEY"
 msg["From"] = "adresse_validée@mailjet.com"
-
+```

@@ -43,7 +43,7 @@ Elle facilite la traçabilité, la communication et le suivi des événements li
 ## 📸 Aperçu de l’application
 
 ### 📨 Mail reçu
-<img src="images/mail.png" width="600">
+<img src="image/mail.png" width="600">
 
 ### 🖥️ Interface Streamlit
 <img src="image/app_1.png" width="600">
